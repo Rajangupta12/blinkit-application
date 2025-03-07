@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa; /* Light gray background */
+}
+
+.auth-container {
+    background: white; /* White container background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: #1a73e8; /* Blue accent color */
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #5f6368; /* Gray text */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #5f6368; /* Gray text */
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #dadce0; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white; /* White input background */
+    color: #333; /* Dark text */
+    transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1a73e8; /* Blue accent color */
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Signup Button */
+.auth-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #1a73e8; /* Blue accent color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: #1557b0; /* Darker blue on hover */
+}
+
+.auth-btn:active {
+    transform: scale(0.98);
+}
+
+/* Terms & Conditions Checkbox */
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #5f6368; /* Gray text */
+}
+
+.terms input {
+    margin-right: 0.5rem;
+}
+
+.terms a {
+    color: #1a73e8; /* Blue accent color */
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Switch to Login Link */
+.switch-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #5f6368; /* Gray text */
+}
+
+.switch-link a {
+    color: #1a73e8; /* Blue accent color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - QuickMart</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Reset Password</h2>
+        <form id="resetPasswordForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tempPassword">Temporary Password:</label>
+            <input type="password" id="tempPassword" name="tempPassword" required>
+
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <button type="submit">Change Password</button>
+        </form>
+        <p><a href="./login.html">Back to Login</a></p>
+    </div>
+
+    <script src="reset-password.js"></script>
+</body>
+</html>
