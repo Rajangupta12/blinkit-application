@@ -23,7 +23,7 @@ body {
 /* Heading */
 h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #007bff;
 }
 
 /* Form Styles */
@@ -48,7 +48,7 @@ input {
 
 /* Button Styles */
 button {
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     padding: 10px;
     border: none;

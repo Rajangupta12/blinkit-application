@@ -18,3 +18,4 @@ document.getElementById("resetPasswordForm").addEventListener("submit", async fu
         alert("Failed to reset password. Please check your details.");
     }
 });
+
