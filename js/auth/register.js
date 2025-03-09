@@ -119,7 +119,7 @@ document.getElementById("signupForm").addEventListener("submit", async function 
             // Redirect to login page after a short delay
             setTimeout(() => {
                 // Ensure the path to login.html is correct
-                window.location.href = "../Login page/login.html"; // Update this path if needed
+                window.location.href = "/pages/auth/login.html"; // Update this path if needed
             }, 2000); // 2-second delay before redirect
         } else {
             alert(`Signup failed: ${responseData.message || "Please try again."}`);
