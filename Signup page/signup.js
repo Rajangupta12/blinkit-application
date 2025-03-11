@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Pre-fill form with demo data
+    document.getElementById("name").value = "kartik";
+    document.getElementById("email").value = "kartik@gmail.com";
+    document.getElementById("phone").value = "8595664069";
+    document.getElementById("password").value = "kartik@1234";
+});
+
 document.getElementById("signupForm").addEventListener("submit", async function(event) {
     event.preventDefault();
 
