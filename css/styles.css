@@ -51,7 +51,7 @@ header {
 }
 
 .header-search {
-    flex: 1;
+    flex: 0.9;
     position: relative;
 }
 
@@ -73,12 +73,18 @@ header {
     color: #666;
 }
 
+.header-login {
+    margin-left: auto;  /* Pushes Login to the right */
+} 
+
 .header-login a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
     font-size: 16px;
+    padding: 10px 15px;  /* Improved spacing */
 }
+
 
 .header-cart button {
     background-color: #20b526;
