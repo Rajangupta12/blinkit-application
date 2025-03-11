@@ -1,77 +1,126 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
+/* Header */
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Search Bar */
 .search-bar {
     text-align: center;
     margin: 20px 0;
 }
 
 .search-bar input {
-    padding: 10px;
-    width: 300px;
+    padding: 12px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 .search-bar button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+.search-bar button:hover {
+    background-color: #388E3C;
+}
+
+/* Categories & Products */
 .categories, .products {
     margin: 20px;
+    text-align: center;
 }
 
 .category-list, .product-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
 }
 
+/* Category & Product Cards */
 .category-item, .product-item {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: none;
+    padding: 15px;
     text-align: center;
-    width: 200px;
+    width: 220px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover, .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .product-item img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 0.9rem;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
 }
