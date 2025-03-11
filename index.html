@@ -23,9 +23,15 @@
                 <input type="text" placeholder='Search "bread"' />
             </div>
     
-            <div class="header-login">
-                <a href="/pages/auth/login.html">Login</a>
+            <div class="header-profile">
+                <div class="profile-icon" id="profileIcon">👤</div>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <a href="/pages/profile.html">My Profile</a>
+                    <a href="/pages/auth/reset-password.html">Reset Password</a>
+                    <a href="#" id="logoutBtn">Logout</a>
+                </div>
             </div>
+            
     
             <div class="header-cart">
                 <button>
@@ -39,5 +45,6 @@
     <main>
         <h1>This is a main dashboard</h1>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>

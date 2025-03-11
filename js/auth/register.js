@@ -80,7 +80,7 @@ document.getElementById("signupForm").addEventListener("submit", async function 
     submitButton.disabled = true; // Disable button to prevent multiple clicks
 
     try {
-        const response = await fetch("http://localhost:8081/api/v1/user/register", {
+        const response = await fetch("http://localhost:8081/api/v1/auth/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

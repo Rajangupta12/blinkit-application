@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blinkit Inspired Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blinkit Clone</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">blink<span>it</span></div>
-        <input type="text" class="search-bar" placeholder="Search 'bread'">
-        <button class="cart-btn">My Cart</button>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="yellow">blink</span><span class="green">it</span>
+            </div>
+    
+            <div class="header-location">
+                <div class="header-location-title">Delivery in 13 minutes</div>
+                <div class="header-location-desc">No 7, F39, Gali, Block F...</div>
+            </div>
+    
+            <div class="header-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder='Search "bread"' />
+            </div>
+    
+            <div class="header-login">
+                <a href="/pages/auth/login.html">Login</a>
+            </div>
+    
+            <div class="header-cart">
+                <button>
+                    <span class="cart-icon">🛒</span>
+                    My Cart
+                </button>
+            </div>
+        </div>
     </header>
 
-    <section class="banner">
-        <div class="paan-corner">Paan Corner - Your favourite paan shop is now online</div>
-        <div class="pharmacy">Pharmacy at your doorstep! Order Now</div>
-        <div class="pet-care">Pet Care supplies in minutes - Order Now</div>
-        <div class="baby-care">No time for a diaper run? Essentials in minutes - Order Now</div>
-    </section>
-
-    <section class="categories">
-        <div class="category">Paan Corner</div>
-        <div class="category">Dairy, Bread & Eggs</div>
-        <div class="category">Fruits & Vegetables</div>
-        <div class="category">Cold Drinks & Juices</div>
-        <div class="category">Snacks & Munchies</div>
-        <div class="category">Breakfast & Instant Food</div>
-        <div class="category">Sweet Tooth</div>
-        <div class="category">Bakery & Biscuits</div>
-        <div class="category">Tea, Coffee & Health Drink</div>
-    </section>
+    <main>
+        <h1>This is a Marchant dashboard</h1>
+    </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
