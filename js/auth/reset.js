@@ -11,10 +11,10 @@ document.getElementById("resetPasswordForm").addEventListener("submit", async fu
         body: JSON.stringify({ email, tempPassword, newPassword })
     });
 
-    // if (response.ok) {
-    //     alert("Password changed successfully. Please login.");
-    //     window.location.href = "login.html";
-    // } else {
-    //     alert("Failed to reset password. Please check your details.");
-    // }
+    if (response.ok) {
+        alert("Password changed successfully. Please login.");
+        window.location.href = "login.html";
+    } else {
+        alert("Failed to reset password. Please check your details.");
+    }
 });

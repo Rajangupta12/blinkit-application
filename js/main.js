@@ -1,32 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const profileIcon = document.getElementById("profileIcon");
-    const profileDropdown = document.getElementById("profileDropdown");
-    const logoutBtn = document.getElementById("logoutBtn");
+document.addEventListener('DOMContentLoaded', () => {
+    const accountBtn = document.querySelector('.account-btn');
+    const dropdown = document.querySelector('.dropdown-content');
 
-    // Toggle Profile Dropdown
-    profileIcon.addEventListener("click", () => {
-        profileDropdown.style.display = 
-            profileDropdown.style.display === "none" || profileDropdown.style.display === ""
-            ? "block"
-            : "none";
-    });
-
-    // Logout Logic
-    logoutBtn.addEventListener("click", (event) => {
-        event.preventDefault();
-
-        // Clear Auth Token (or Session)
-        localStorage.removeItem("authToken");
-
-        // Redirect to Login Page
-        alert("You have been logged out successfully.");
-        window.location.href = "/pages/auth/login.html";
+    // Toggle dropdown
+    accountBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     });
 
     // Close dropdown when clicking outside
-    window.addEventListener("click", (event) => {
-        if (!profileIcon.contains(event.target) && !profileDropdown.contains(event.target)) {
-            profileDropdown.style.display = "none";
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.account-dropdown')) {
+            dropdown.style.display = 'none';
         }
+    });
+
+    // Close dropdown on scroll
+    window.addEventListener('scroll', () => {
+        dropdown.style.display = 'none';
     });
 });

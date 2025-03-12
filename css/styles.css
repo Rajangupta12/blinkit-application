@@ -7,18 +7,18 @@ body {
 }
 
 header {
-    width: 100%; /* Full-width without extra space */
+    width: 100%;
     background-color: #ffffff;
     padding: 15px 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensures padding doesn’t expand width */
+    box-sizing: border-box;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 100%; /* Stretch content across full width */
+    width: 100%;
 }
 
 .logo {
@@ -74,7 +74,7 @@ header {
 }
 
 .header-login {
-    margin-left: auto;  /* Pushes Login to the right */
+    margin-left: auto;
 } 
 
 .header-login a {
@@ -82,9 +82,8 @@ header {
     color: #000;
     font-weight: 600;
     font-size: 16px;
-    padding: 10px 15px;  /* Improved spacing */
+    padding: 10px 15px;
 }
-
 
 .header-cart button {
     background-color: #20b526;
@@ -129,7 +128,7 @@ main {
 }
 
 .profile-dropdown {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
     top: 40px;
     right: 0;
@@ -155,3 +154,4 @@ main {
 #logoutBtn {
     color: red;
 }
+

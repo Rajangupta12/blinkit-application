@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blinkit Clone</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/dashboard/admin.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header-container">
-            <div class="logo">
-                <span class="yellow">blink</span><span class="green">it</span>
+            <div class="logo-section">
+                <div class="logo">
+                    <span class="yellow">blink</span><span class="green">it</span>
+                </div>
+                <div class="delivery-info">
+                    <div class="delivery-time">Delivery in 13 minutes</div>
+                    <div class="delivery-address">No.7, F39, GM, Block F, Penn NL</div>
+                </div>
             </div>
-    
-            <div class="header-location">
-                <div class="header-location-title">Delivery in 13 minutes</div>
-                <div class="header-location-desc">No 7, F39, Gali, Block F...</div>
-            </div>
-    
-            <div class="header-search">
+
+            <div class="search-bar">
+                <input type="text" placeholder='Search "groceries"' />
                 <span class="search-icon">🔍</span>
-                <input type="text" placeholder='Search "bread"' />
             </div>
-    
-            <div class="header-login">
-                <a href="/pages/auth/login.html">Login</a>
-            </div>
-    
-            <div class="header-cart">
-                <button>
+
+            <div class="header-actions">
+                <div class="account-dropdown">
+                    <button class="account-btn">Account</button>
+                    <div class="dropdown-content">
+                        <a href="#">My Account</a>
+                        <a href="#">My Orders</a>
+                        <a href="#">Saved Address</a>
+                        <a href="#">E-Gift Cards</a>
+                        <a href="#">FAQ's</a>
+                        <a href="/pages/auth/reset.html">reset-password</a>
+                        <a href="#">Account Privacy</a>
+                        <a href="/pages/auth/forgot-password.html">Frogot Password</a>
+                        <a href="/pages/auth/login.html">Log Out</a>
+                    </div>
+                </div>
+                <button class="cart-btn">
                     <span class="cart-icon">🛒</span>
                     My Cart
                 </button>
             </div>
         </div>
     </header>
-
     <main>
-        <h1>This is a Admin dashboard</h1>
+        <h1>This is a Dashboard dashboard</h1>
     </main>
     <script src="/js/main.js"></script>
 </body>
